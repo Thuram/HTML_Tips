@@ -6,7 +6,10 @@
     src: url('../Android/Android/idroid.otf') format('opentype');
     font-weight: normal;
 }
-
+ /*
+ Min width 400
+ Max width 800-1000
+ */
 
 
 :root {
@@ -38,24 +41,66 @@ body {
 }
 
 header {
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
 }
 
-header > p {
-    color: white;
-}
+
 
 nav {
     background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.377);
+}
+
+nav > a { 
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+
+}
+
+nav > a:hover{ 
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 
 main {
+    text-align: justify;
+    min-width: 300px;
+    max-width: 1000px;
     background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
 }
+
 
 header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.377);
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padao);
+    font-size: 1.2em;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px black;
 }
 
 main h1 {
@@ -65,6 +110,14 @@ main h1 {
 main h2 {
     color: var(--cor5);
     font-family: var(--font-android);
+}
+
+main img {
+    width: 100%;
+
+} 
+main img.pequena {
+    display: block;
 }
 
 footer{
