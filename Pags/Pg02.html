@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="shortcut icon" href="favicon/devilin a new dress.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style-css.css">
+</head>
+<body>
+    <header>
+        <h1>Códigos em CSS</h1>
+        <nav>
+            <a href="Pg01.html">HTML5</a>
+            <a href="Pg03.html">Tipografia</a>
+            <a href="Pg04.html">Cores</a>
+            <a href="#">4</a> <br>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+        </nav>
+    </header>
+
+    
+<main>
+    <article id="CSS-codigos">
+       
+<pre>
+    <link rel="stylesheet" type="text/css" href="NameHere.css"> = CSS out pag
+
+    background-image: linear-gradient(45,90deg ou to right, white, blue);
+    background-attachment: fixed; pagina fixada sem se mover
+    Background-color = cor de fundo da página  
+    background-image: radial-gradient(circle, white, blue);
+
+    *{height: 100%} = configuração global das CSS
+
+    margin:auto; = centralizado 
+    height: 200px = altura da pagina 
+    width: 600px; = largura da pagina
+    weight: = peso da letra  
+    padding: 10px = acochoamento lateral
+    margin: auto = Autoregulação do cetralizamneto do texto
+    border: 10px = borda arredondada ou definida
+    box-shadow: 10px 10px 10px black> = sombra para o lado, sombra para baixo, sombrea vai espalhar, transparencia(cor)
+    
+    text-allign: justify = texto alinhado
+    text-allign: center = texto centralizado
+    text-allign: left/right = texto, esquerda ou direita
+    text-shadow: 1px 1px 2px = sombra do texto
+    text-decoration:underline = sublinhado
+    text-indent: 20px = inicio do paragrafo, identado
+    text-decoration:none; = tirar sublinhado do link ou text
+    text-decoration:underline; = sublinhado
+    
+    font-size: 20px = tamanho da fonte
+    font-weight: bold = peso da fonte 
+    font-style:normal, italic = estilo da fonte
+    font-family: arial = fonte da seleção escolhida
+
+    color: blue = cor do texto
+
+
+    @font-face = fontes externas
+
+    tipos de format() = fonte alocada em pastas
+    Opentype(otf)
+    TrueType(ttf)
+    Embedded-opentype
+    Truetype-aat(Apple advanced typography)
+    svg
+
+
+
+
+    Pseudo classe -- estado de um elemento == ativo, marcado, vazio, habilitado
+
+    :Hover - flutuar
+    :Visited - visitado
+    :Active - clicado
+    :root - armazena variaveis
+
+
+
+    Pseudo Elemento -- conteúdo do elemento  
+
+    ::after - content '[escrever algo]' --> antes
+    ::before - content 'conteúdo' --> depois
+
+
+    
+    Seletores personalizados
+
+    # --> ID
+    . --> Class
+    : --> Pseudo-class
+    :: --> Pseudo-element
+    > --> Children
+    
+
+
+
+    Seletores
+
+    HTML = id --> Apenas 1 id elemento -- ID --> sobrepõe class
+    CSS = #
+
+    HTML = class --> Mais de 1 elemento (Classificar pela funcionalidade)
+    CSS = .
+
+
+
+
+
+    Modelos de caixas
+
+     height --> altura
+     width --> largura
+     border --> linha em volta do conteúdo 
+     padding/espaço interno--> acochoamento/preenchimento
+     margin/externo --> espaço externo do preenchimento
+     outline --> contorno
+     weight --> peso
+     display:block --> box-level
+     display: inline --> inline level
+     box-shadow --> sombra de caixa 3 niveis hor - ver - espa
+     border-radius --> arredondamento de borda
+    
+
+
+    Tipos de caixas 
+
+    box-level -->quebra linha, largura total da tela 100% viewport
+    
+    div --> 
+
+    inline-level --> dentro da linha, não ocupa 100% width
+
+    span --> 
+
+    user agent = navegador
+
+
+
+    Gradiente linear em pagina 
+    *{
+        height: 50%;
+    }
+    background-image: linear-gradient(45deg, #3789DE 10%,#6E43BB,#B9348E ,#E84852,#F9832A);
+    background-attachment:fixed;
+
+
+
+
+    h1 id="principal">Site com HTML e CSS, testando ID /h1
+    h1 class="destaque">Aprendendo HTML /h1
+
+    h1#principal {
+        text-align: center;
+        color: rgb(90, 90, 59); 
+        background-color: rgb(200, 170, 110);
+     }
+     h1.basico {
+         color: rgb(141, 199, 53);
+     }
+
+
+
+
+
+
+     style 
+     a{
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:visited{
+        color: darkred;
+    }
+
+    a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+
+    a:active{
+        color: green;
+    }
+
+    .especial{
+        color: yellow;
+        background-color: aqua;
+
+    }
+
+    .especial::after{
+        content: '<--';
+    }
+
+    .especial::before{
+        content: '-->';
+    }
+    style
+
+     h1 Personalizando links h1
+     ul
+         li a target="_blank" class="especial" href="cor001.html">Site Principal a li
+         li a href="pseudo-classe08.html">Pseudo classes a li
+         li a href="maispseudo-classes.html">Fiquei sem ideias de link a li
+     ul
+
+
+
+
+
+     
+
+     style
+        h1{ /* Box-Level */
+            background-color: lightcyan;
+            height: 300px;
+            width: 300px;
+
+            /*
+            Width style color
+            */
+            border: 10px solid rgb(70, 39, 39);
+
+            /*
+            TOP -> RIGHT -> BOTTOM -> LEFT or one same or two diferent
+            */
+            padding: 10px 10px 10px 10px;
+
+            /*
+            TOP -> RIGHT -> BOTTOM -> LEFT
+            */
+            margin: 20px auto 20px auto;
+
+            /*
+            Width style color
+            */
+            outline: 10px dashed red ;
+        }
+
+        a{ /* Inline Level */
+            /* 
+            Width style color 
+            */
+            border: 5px dashed red;
+        }
+
+        h1 Exemplo de caixa Box-level h1
+        p O paragrafo também é uma box-level
+
+        Links são exemplos de a href="#">inline level a p
+    
+        h2 a href="cor001.html">Pag 01 a h2
+
+
+
+
+
+
+
+
+
+
+        Pseudo classes + div
+        style>
+            div{
+                background-color: aquamarine;
+                text-align: center;
+                display: inline-block;
+                border: 1px solid black;
+                height: 200px;
+                width: 200px;
+            }
+            div:hover{
+                background-color: blue;
+                color: antiquewhite;
+                
+            }
+        style
+        body
+            div id="d1" div1 div
+            div div2 div
+            div div3 div
+        
+            h2 a href="cor001.html">Pag01 a h2
+            h2 a href="test-hoover008.html">Pag Hoover a h2
+            h2 a href="maispseudo-classes.html">Pseudo classes a h2
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Test de hover
+        
+        style
+            body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            div > p {
+                display: none;
+            }
+        
+            div:hover > p{
+                color: #ffffff;
+                display: block;
+                background-color: rgb(160, 00, 00);
+                width: 150px;
+            }
+        
+            div:hover{
+                color: rgb(0, 0, 0);
+                width: 150px;
+            }
+        
+        style
+        body
+            h1 Exemplo de Hoover h1
+            p Passe o mouse sobre o texto abaixo p
+            div
+                Passe o mouse aqui
+                p Texto escondido p
+            div
+            a href="pseudo-classe08.html"
+                p Fim do Exemplo p
+            a
+    
+
+
+
+
+
+        Imagem dinâmica
+
+        picture
+            source media="(max-width:750px)" srcset="fotos/foto-p.png" type="image/png"
+            source media="(max-width:1050px)" srcset="fotos/foto-m.png" type="image/png"
+            img src="fotos/foto-g.png" alt="foto grande"
+        picture
+
+
+</pre>
+  
+    </article>
+</main>
+
+</body>
+</html>
