@@ -62,15 +62,21 @@ a:hover {
 
 }
 
+
+
 pre {
     padding: 15px;
     font-family: var(--fonte-texto);
     font-size: 1.1em;
+    background-color: aqua;
     
 }
 
 .html {
     text-align: center;
+    border: 2px solid #783F8E;
+
+    
 }
 
 
@@ -80,4 +86,10 @@ aside > ul{
     list-style-position: inside;
     columns: 2;
     list-style-type: "\2714\00A0\00A0";
+    background-color: aqua;
+    border-radius: 20px;
+    font-size: 100%;
+    width: fit-content;
+    margin: auto;
+    
 }
