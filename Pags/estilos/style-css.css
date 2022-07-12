@@ -32,6 +32,8 @@ header h1 {
 }
 
 
+
+
 nav {
     font-size: 1.0em;
     font-family:'Manrope', 'sans-serif';
@@ -74,8 +76,12 @@ pre {
 
 .html {
     text-align: center;
-    border: 2px solid #783F8E;
-
+    border: 1px solid #000000;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #783F8E;
+    width: fit-content;
     
 }
 
@@ -92,4 +98,11 @@ aside > ul{
     width: fit-content;
     margin: auto;
     
+    
+}
+
+strong 
+{
+    font-size: 110%;
+    text-decoration: underline;
 }
