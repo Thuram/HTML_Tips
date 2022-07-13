@@ -27,302 +27,153 @@
 <main>
     <article id="CSS-codigos">
        
-<pre>
-    link rel="stylesheet" type="text/css" href="NameHere.css"> = CSS out pag
+<aside>
+    <h2 class="css">Background</h2>
+    <ul>
 
-    display:inline-block; = background travado
+    <li>background-image: linear-gradient(45,90deg ou to right, white, blue);</li> 
+    <li>background-attachment: fixed; pagina fixada sem se mover</li>
+    <li>Background-color = cor de fundo da página</li>  
+    <li>background-image: radial-gradient(to bottom, yellow, orange);</li>
+    <li>background-image: url('Imagens/pattern002.png');</li>
+    <li>background-size: 50px;</li>
+    <li>background-size: 100%</li>
+    <li>background-repeat: no-repeat;</li>
+    <li>background-position:center center;</li>
+    <li>min-width  screen -> 280px mobile </li>
+    <li>max-width  screen -> 800px notebook</li>
+    <li>img -> width 100% --> adaptação de Imagem</li>
+    <li>background-image: linear-gradient(45deg, #3789DE 10%,#6E43BB,#B9348E ,#E84852,#F9832A);</li>
+    <li>background-attachment:fixed;</li>
 
-    background-image: linear-gradient(45,90deg ou to right, white, blue);
-    background-attachment: fixed; pagina fixada sem se mover
-    Background-color = cor de fundo da página  
-    background-image: radial-gradient(to bottom, yellow, orange);
-    background-image: url('Imagens/pattern002.png');
-    background-size: 50px;
-    background-repeat: no-repeat;
-    background-position:center center;
+    </ul>
+</aside>
 
+<aside>
+    <h2 class="css">Gerais</h2>
+    <ul>
+    <li>*{height: 100%} = configuração global das CSS</li>
+    <li>margin:auto; = centralizado</li> 
+    <li>height: 200px = altura da pagina</li> 
+    <li>height: 100vh = alinhamento central a página</li>
+    <li>width: 600px; = largura da pagina</li>  
+    <li>padding: 10px = acochoamento lateral</li>
+    <li>margin: auto = Autoregulação do cetralizamneto do texto</li>
+    <li>border: 10px = borda arredondada ou definida</li>
+    <li>box-shadow: 10px 10px 10px black> = sombra para o lado, sombra para baixo, sombrea vai <li>espalhar, transparencia(cor)</li>
+    <li>display:inline-block; = background travado</li>
+    <li>color = cor do texto</li>
+    <li>@font-face = fontes externas</li>
+    </ul>
+</aside> 
 
-    *{height: 100%} = configuração global das CSS
-
-    margin:auto; = centralizado 
-    height: 200px = altura da pagina 
-    height: 100vh = alinhamento central a página
-    width: 600px; = largura da pagina  
-    padding: 10px = acochoamento lateral
-    margin: auto = Autoregulação do cetralizamneto do texto
-    border: 10px = borda arredondada ou definida
-    box-shadow: 10px 10px 10px black> = sombra para o lado, sombra para baixo, sombrea vai espalhar, transparencia(cor)
-    
-    text-allign: justify = texto alinhado
-    text-allign: center = texto centralizado
-    text-allign: left/right = texto, esquerda ou direita
-    text-shadow: 1px 1px 2px = sombra do texto
-    text-decoration:underline = sublinhado
-    text-indent: 20px = inicio do paragrafo, identado
-    text-decoration:none; = tirar sublinhado do link ou text
-    text-decoration:underline; = sublinhado
-    
-    font-size: 20px = tamanho da fonte
-    font-weight: bold = peso da fonte 
-    font-style:normal, italic = estilo da fonte
-    font-family: arial = fonte da seleção escolhida
-
-    color: blue = cor do texto
-
-
-    @font-face = fontes externas
-
-    tipos de format() = fonte alocada em pastas
-    Opentype(otf)
-    TrueType(ttf)
-    Embedded-opentype
-    Truetype-aat(Apple advanced typography)
-    svg
-
-
-
-
-    <h2>Pseudo classe -- estado de um elemento == ativo, marcado, vazio, habilitado</h2>
-
-    :Hover - flutuar
-    :Visited - visitado
-    :Active - clicado
-    :root - armazena variaveis
-
-
-
-    <h2>Pseudo Elemento -- conteúdo do elemento</h2>  
-
-    ::after - content '[escrever algo]' --> antes
-    ::before - content 'conteúdo' --> depois
-
-
-    
-    <h2>Seletores personalizados</h2>
-
-    # --> ID
-    . --> Class
-    : --> Pseudo-class
-    :: --> Pseudo-element
-    > --> Children
-    
-    HTML = id --> Apenas 1 id elemento -- ID --> sobrepõe class
-    CSS = #
-
-    HTML = class --> Mais de 1 elemento (Classificar pela funcionalidade)
-    CSS = .
-
-
-
-
-
-    <h2>Modelos de caixas</h2>
-
-     height --> altura
-     width --> largura
-     border --> linha em volta do conteúdo 
-     padding/espaço interno--> acochoamento/preenchimento
-     margin/externo --> espaço externo do preenchimento
-     outline --> contorno
-     weight --> peso
-     display:block --> box-level
-     display: inline --> inline level
-     box-shadow --> sombra de caixa 3 niveis hor - ver - espa
-     border-radius --> arredondamento de borda
-    
-
-
-    <h2>Tipos de caixas</h2> 
-
-    box-level -->quebra linha, largura total da tela 100% viewport
-    
-    div --> 
-
-    inline-level --> dentro da linha, não ocupa 100% width
-
-    span --> 
-
-    user agent = navegador
-
-
-
-
-
-    <h2>
-        Responsividade dos sites
-        Adequação ao tamanho da tela
-    </h2>
- 
-    min-width  screen -> 280px mobile 
-    max-width  screen -> 800px notebook
-    img -> width 100% --> adaptação de Imagem
-
-
-
-
-    <h2>Gradiente linear em pagina</h2> 
-    *{
-        height: 50%;
-    }
-    background-image: linear-gradient(45deg, #3789DE 10%,#6E43BB,#B9348E ,#E84852,#F9832A);
-    background-attachment:fixed;
-
-
-<hr>
-
-    h1 id="principal">Site com HTML e CSS, testando ID /h1
-    h1 class="destaque">Aprendendo HTML /h1
-
-    h1#principal {
-        text-align: center;
-        color: rgb(90, 90, 59); 
-        background-color: rgb(200, 170, 110);
-     }
-     h1.basico {
-         color: rgb(141, 199, 53);
-     }
-
-
-
-     style
-        h1{ /* Box-Level */
-            background-color: lightcyan;
-            height: 300px;
-            width: 300px;
-
-            /*
-            Width style color
-            */
-            border: 10px solid rgb(70, 39, 39);
-
-            /*
-            TOP -> RIGHT -> BOTTOM -> LEFT or one same or two diferent
-            */
-            padding: 10px 10px 10px 10px;
-
-            /*
-            TOP -> RIGHT -> BOTTOM -> LEFT
-            */
-            margin: 20px auto 20px auto;
-
-            /*
-            Width style color
-            */
-            outline: 10px dashed red ;
-        }
-
-        a{ /* Inline Level */
-            /* 
-            Width style color 
-            */
-            border: 5px dashed red;
-        }
-
-        h1 Exemplo de caixa Box-level h1
-        p O paragrafo também é uma box-level
-
-        Links são exemplos de a href="#">inline level a p
-    
-        h2 a href="cor001.html">Pag 01 a h2
-
-
-
-
-        <h2>Pseudo classes + div</h2>
+<aside>
+    <h2 class="css">Text</h2>
+    <ul>
         
-        style>
-            div{
-                background-color: aquamarine;
-                text-align: center;
-                display: inline-block;
-                border: 1px solid black;
-                height: 200px;
-                width: 200px;
-            }
-            div:hover{
-                background-color: blue;
-                color: antiquewhite;
-                
-            }
-        style
-        body
-            div id="d1" div1 div
-            div div2 div
-            div div3 div
-        
-            h2 a href="cor001.html">Pag01 a h2
-            h2 a href="test-hoover008.html">Pag Hoover a h2
-            h2 a href="maispseudo-classes.html">Pseudo classes a h2
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-        Test de hover
-        
-        style
-            body{
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            }
-            div > p {
-                display: none;
-            }
-        
-            div:hover > p{
-                color: #ffffff;
-                display: block;
-                background-color: rgb(160, 00, 00);
-                width: 150px;
-            }
-        
-            div:hover{
-                color: rgb(0, 0, 0);
-                width: 150px;
-            }
-        
-        style
-        body
-            h1 Exemplo de Hoover h1
-            p Passe o mouse sobre o texto abaixo p
-            div
-                Passe o mouse aqui
-                p Texto escondido p
-            div
-            a href="pseudo-classe08.html"
-                p Fim do Exemplo p
-            a
+        <li>text-allign: justify = texto alinhado</li>
+        <li>text-allign: center = texto centralizado</li>
+        <li>text-allign: left/right = texto, esquerda ou direita</li>
+        <li>text-shadow: 1px 1px 2px = sombra do texto</li>
+        <li>text-decoration:underline = sublinhado</li>
+        <li>text-indent: 20px = inicio do paragrafo, identado</li>
+        <li>text-decoration:none; = tirar sublinhado do link ou text</li>
+        <li>font-size: 20px = tamanho da fonte</li>
+        <li>font-weight: bold = peso da fonte </li>
+        <li>font-style:normal, italic = estilo da fonte</li>
+        <li>font-family: arial = fonte da seleção escolhida</li>
     
+        
+    </ul>
+</aside>
+
+<aside>
+    <h2 class="css">Font import </h2>
+
+<ul>
+
+     <li>tipos de format() = fonte alocada em pastas</li>
+     <li>Opentype(otf)</li>
+     <li>TrueType(ttf)</li>
+     <li>Embedded-opentype</li>
+     <li>Truetype-aat(Apple advanced typography)</li>
+     <li>svg</li>
+</ul>
+</aside>
+
+
+
+
+    <h2 class="css">Pseudo classe -- estado de um elemento == ativo, marcado, vazio, habilitado</h2>
+
+    <aside>
+        <ul>
+            <li>:Hover - flutuar</li>
+            <li>:Visited - visitado</li>
+            <li>:Active - clicado</li>
+            <li>:root - armazena variaveis</li>
+        </ul>
+    </aside>
+
+
+
+    <h2 class="css">Pseudo Elemento -- conteúdo do elemento</h2>  
+<aside>
+<ul>
+    
+        <li>::after - content '[escrever algo]' --> antes</li>
+        <li>::before - content 'conteúdo' --> depois</li>
+</ul>
+</aside>
+
+
+    
+    <h2 class="css">Seletores personalizados</h2>
+
+    <aside>
+        <ul>
+            <li># --> ID</li>
+            <li>. --> Class</li>
+            <li>: --> Pseudo-class</li>
+            <li>:: --> Pseudo-element</li>
+            <li>> --> Children</li>
+            <li>HTML = id --> Apenas 1 id elemento -- ID --> sobrepõe class / CSS = #</li>
+            <li>HTML = class --> Mais de 1 elemento (Classificar pela funcionalidade) / CSS = .</li>
+            h1 id="principal">Site com HTML e CSS, testando ID /h1
+            h1 class="destaque">Aprendendo HTML /h1
+        </ul>
+    </aside>
 
 
 
 
 
-        Imagem dinâmica
+    <h2 class="css">Modelos de caixas</h2>
+<aside>
+<ul>
+    
+         <li>height --> altura</li>
+         <li>width --> largura</li>
+         <li>border --> linha em volta do conteúdo</li>
+         <li>padding/espaço interno--> acochoamento/preenchimento</li>
+         <li>margin/externo --> espaço externo do preenchimento</li>
+         <li>outline --> contorno</li>
+         <li>weight --> peso</li>
+         <li>display:block --> box-level</li>
+         <li>display: inline --> inline level</li>
+         <li>box-shadow --> sombra de caixa 3 niveis hor - ver - espa</li>
+         <li>border-radius --> arredondamento de borda</li>
+         <li>box-level -->quebra linha, largura total da tela 100% viewport</li>
+         <li>div --> </li>
+         <li>inline-level --> dentro da linha, não ocupa 100% width</li>
+         <li>span -->     </li>
+         <li>user agent = navegador</li>
+</ul>   
+</aside>
 
-        picture
-            source media="(max-width:750px)" srcset="fotos/foto-p.png" type="image/png"
-            source media="(max-width:1050px)" srcset="fotos/foto-m.png" type="image/png"
-            img src="fotos/foto-g.png" alt="foto grande"
-        picture
 
 
 
-
-
-
-        videos =  
-
-</pre>
-  
     </article>
 </main>
 

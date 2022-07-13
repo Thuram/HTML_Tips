@@ -85,6 +85,16 @@ pre {
     
 }
 
+.css {
+    text-align: center;
+    border: 1px solid #000000;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #783F8E;
+    width: fit-content;
+}
+
 
 
 aside > ul{
@@ -94,7 +104,7 @@ aside > ul{
     list-style-type: "\2714\00A0\00A0";
     background-color: aqua;
     border-radius: 20px;
-    font-size: 100%;
+    font-size:0.7em;
     width: fit-content;
     margin: auto;
     
