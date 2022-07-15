@@ -82,6 +82,7 @@ pre {
     border-radius: 15px;
     background-color: #783F8E;
     width: fit-content;
+    transform: translate(50%, 50%);
     
 }
 
